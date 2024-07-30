@@ -1,0 +1,13 @@
+[package]
+name = "async_await"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+reqwest = { version = "0.10", features = ["blocking", "json"] }
+error-chain = "0.12.4"
+tokio = { version = "0.2.3", features = ["full"] }
+# Why add features?
+# Customize Functionality: Enable or disable specific functionalities of a crate. This can help reduce the binary size and improve compile times by only including the parts of the crate you actually need.
+# Improve Performance: By including only the necessary features, you can potentially improve the performance of your application.
+# Reduce Dependencies: Some features may add extra dependencies. By only enabling the features you need, you can minimize the number of dependencies your project relies on.
